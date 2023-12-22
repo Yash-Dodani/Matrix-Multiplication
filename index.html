@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix CalCulator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #212121;
+        color: #fff;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+        flex-wrap: wrap;
+      }
+
+      input {
+        background-color: rgb(16, 10, 2);
+        color: skyblue;
+        width: 12rem;
+        height: 5vh;
+        border: 5px solid rgb(104, 104, 170);
+        border-radius: 25px;
+        margin: 0.5rem;
+        text-align: center;
+        font-size: 2rem;
+        caret-color: blueviolet;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      label {
+        margin-top: 2rem;
+        margin-right: 10rem;
+        font-size: 2rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .b {
+        margin-top: 5rem;
+      }
+
+      .ans {
+        display: none;
+        /* display: flex; */
+        margin-top: 1rem;
+        flex-wrap: wrap;
+      }
+      .second {
+        display: none;
+        margin-left: 19vw;
+      }
+
+      span {
+        display: block;
+        background-color: rgb(16, 10, 2);
+        color: skyblue;
+        width: 12rem;
+        height: 5vh;
+        border: 5px solid darkblue;
+        border-radius: 25px;
+        margin: 0.5rem;
+        text-align: center;
+        font-size: 2rem;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      button {
+        margin-top: 2rem;
+        width: 15rem;
+        height: 5vh;
+        color: burlywood;
+        background-color: #392323;
+        border-radius: 15px;
+        border: 2px #fff solid;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      hr {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+      }
+      #reset{
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="a">
+        <label for="matrix-A" id="matrix-A">Enter Matrix A</label><br />
+        <input type="text" id="a11" placeholder="a11" />
+        <input type="text" id="a12" placeholder="a12" /><br />
+        <input type="text" id="a21" placeholder="a21" />
+        <input type="text" id="a22" placeholder="a22" />
+      </div>
+      <div class="b">
+        <label for="matrix-B" id="matrix-B">Enter Matrix B</label><br />
+        <input type="text" id="b11" placeholder="b11" />
+        <input type="text" id="b12" placeholder="b12" /><br />
+        <input type="text" id="b21" placeholder="b21" />
+        <input type="text" id="b22" placeholder="b22" />
+      </div>
+      <hr />
+      <div class="ans">
+        <label for="ans" id="ans">Answer Is </label>
+        <span id="s11"></span>
+        <span id="s21"></span>
+        <br />
+      </div>
+      <div class="ans second">
+        <span id="s12"></span>
+        <span id="s22"></span>
+      </div>
+      <div class="btn">
+        <button type="submit" id="calc">CALCULATE</button>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>

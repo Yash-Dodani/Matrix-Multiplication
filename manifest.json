@@ -1,0 +1,11 @@
+{
+    "name": "Matrix Multiplication",
+    "version": "1.0.0",
+    "description": "You Can Browse Tutorial Tips and Tricks !! Follow For More",
+    "manifest_version": 3,
+    "author": "Yash Dodani",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Enjoy Maths"
+    }
+}
